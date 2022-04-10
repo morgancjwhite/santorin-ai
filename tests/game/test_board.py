@@ -13,6 +13,7 @@ def test_board_update():
     # grid 3, 4 (x index 4, y index 3) is E4
     board.update("E4", 3)
     assert board.grid[3, 4] == 3
+    board.print()
 
 
 def test_board_get():

@@ -15,7 +15,7 @@ class Board:
     def print(self):
 
         each_line = ["  ".join(map(str, map(int, y))) for y in self.grid]
-        coordinated = [f"{num} | {line}" for num, line in zip(range(1, 6), each_line)]
+        coordinated = [f"{num} | {line}" for num, line in zip([1, 2, 3, 4, 5], each_line)]
         print("    A  B  C  D  E\n   --------------")
         print("\n".join(coordinated))
 
