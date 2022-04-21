@@ -9,7 +9,7 @@ BOARD_WIDTH = 5
 class Board:
     def __init__(self):
         self.grid = np.zeros((BOARD_HEIGHT, BOARD_WIDTH))
-        self.letter_coord = {"a": 0, "b": 1, "c": 2, "d": 3, "e": 4 }
+        self.letter_coord = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4 }
         self.num_coord = {"1": 0, "2": 1, "3": 2, "4": 3, "5": 4 }
 
     def print(self):
@@ -29,8 +29,8 @@ class Board:
         try:
             if len(coordinate) != 2:
                 raise InvalidGridReference
-            x = self.letter_coord[coordinate[0].lower()]
-            y = self.num_coord[coordinate[1].lower()]
+            x = self.letter_coord[coordinate[0].upper()]
+            y = self.num_coord[coordinate[1].upper()]
 
         except (KeyError, TypeError) as exc:
             raise InvalidGridReference from exc

@@ -1,0 +1,19 @@
+BASIC NOTATION
+
+The Santorini board consists of 5x5 squares and to simplify how we refer to the board state, we have gone with the following notation:
+A-E for the x axis, going from left to right.
+1-5 for the y axis going from top to bottom.
+
+A1 therefore refers to the square in the top left of the board.
+C4 refers to square in the middle column and 2nd from the bottom.
+D6, J2, P are examples of invalid grid positions
+(the alpha component of this notation is case-insensitive)
+
+
+VALUES
+
+0 in the grid represents an empty spot
+1 represents the first level of the Santorini architectural wonder
+2 represents the second level
+3 represents the third (and winning) level
+4 represents the fourth (and blocking) level
