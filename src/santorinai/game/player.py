@@ -18,6 +18,7 @@ class Player:
         with suppress(IndexError):
             possible_x_values = [GRID_X_AXIS[i] for i in range(x_index - 1, x_index + 2) if i >= 0]
             possible_y_values = [GRID_Y_AXIS[j] for j in range(y_index - 1, y_index + 2) if j >= 0]
+        # TODO Now get all unique combinations of possible x and y values
         print(possible_x_values)
         print(possible_y_values)
 
