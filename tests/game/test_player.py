@@ -1,4 +1,4 @@
-from santorinai.game.player import Player
+from src.santorinai.game.player import Player
 
 
 def test_player_possible_locations():

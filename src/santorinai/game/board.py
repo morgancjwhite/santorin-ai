@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.santorinai.game.exceptions import InvalidGridReference
+from game.exceptions import InvalidGridReference
 
 BOARD_HEIGHT = 5
 BOARD_WIDTH = 5
@@ -13,7 +13,6 @@ class Board:
         self.num_coord = {"1": 0, "2": 1, "3": 2, "4": 3, "5": 4 }
 
     def print(self):
-
         each_line = ["  ".join(map(str, map(int, y))) for y in self.grid]
         coordinated = [f"{num} | {line}" for num, line in zip([1, 2, 3, 4, 5], each_line)]
         print("    A  B  C  D  E\n   --------------")
